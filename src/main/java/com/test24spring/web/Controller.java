@@ -16,13 +16,8 @@ public class Controller {
     @Autowired
     private UserDao userDao;
 
-    @RequestMapping("/public")
+    @RequestMapping(value = {"/", "/public"})
     public String home() {
-        return "Hello World!";
-    }
-
-    @RequestMapping("/")
-    public String home2() {
         return "Hello World!";
     }
 

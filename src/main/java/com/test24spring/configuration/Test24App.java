@@ -4,7 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
-import org.thymeleaf.spring4.expression.Mvc;
 
 @EnableAutoConfiguration
 @ComponentScan({
@@ -15,8 +14,8 @@ import org.thymeleaf.spring4.expression.Mvc;
         MvcConfig.class,
         WebSecurityConfig.class
 })
-public class TestApp {
+public class Test24App {
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(TestApp.class, args);
+        SpringApplication.run(Test24App.class, args);
     }
 }

@@ -45,9 +45,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         for (UserDto user : users) {
             auth.inMemoryAuthentication().withUser(user.getLogin()).password(user.getPassword()).roles("USER");
         }
-
-//        auth.inMemoryAuthentication()
-//            .withUser("user").password("password").roles("USER");
     }
 
     public void setUserDao(UserDao userDao) {
